@@ -1,10 +1,3 @@
-//
-//  RocketXUITestsLaunchTests.swift
-//  RocketXUITests
-//
-//  Created by qaz on 20.12.2022.
-//
-
 import XCTest
 
 final class RocketXUITestsLaunchTests: XCTestCase {

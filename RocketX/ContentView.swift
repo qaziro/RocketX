@@ -1,21 +1,13 @@
-//
-//  ContentView.swift
-//  RocketX
-//
-//  Created by qaz on 20.12.2022.
-//
-
 import SwiftUI
+import ComposableArchitecture
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+        MainView(store: Store(
+            initialState: Main.State(),
+            reducer: Main()
+        )
+        )
     }
 }
 
